@@ -1,7 +1,7 @@
 public class Person {
-    private String name;
-    private String id;
-    private int age;
+    protected String name;
+    protected String id;
+    protected int age;
 
     public Person() {
 

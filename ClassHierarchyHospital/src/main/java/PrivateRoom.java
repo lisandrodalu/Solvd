@@ -9,6 +9,7 @@ public class PrivateRoom extends Room{
         super(price, capacity);
         this.patient = patient;
         this.free = true;
+
     }
 
     public Patient getPatient() {

@@ -51,4 +51,11 @@ public class Patient extends Person implements Comparable<Object> {
         }
         return  0;
     }
+
+    @Override
+    public String toString() {
+        return "Patient= "+this.name + "Id: "+this.id +
+                "patientNumber=" + patientNumber +
+                ", medicalInsurance='" + medicalInsurance ;
+    }
 }

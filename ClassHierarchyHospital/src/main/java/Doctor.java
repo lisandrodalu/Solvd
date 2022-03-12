@@ -1,3 +1,5 @@
+import java.util.Objects;
+
 public class Doctor extends Worker{
 
     private String specialty;
@@ -31,5 +33,26 @@ public class Doctor extends Worker{
         this.medicalID = medicalID;
     }
 
+    @Override
+    public String toString() {
+        return "Doctor " +
+                ", name='" + name +
+                "specialty='" + specialty + '\'' +
+                ", medicalID=" + medicalID  + '\'' +
+                ", id='" + id + '\'' +
+                ", salary=" + salary;
+    }
 
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Doctor doctor = (Doctor) o;
+        return medicalID == doctor.medicalID && Objects.equals(specialty, doctor.specialty);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(specialty, medicalID);
+    }
 }

@@ -1,5 +1,5 @@
 public class Worker extends Person{
-    private long salary;
+    protected long salary;
 
     public Worker(){
 
