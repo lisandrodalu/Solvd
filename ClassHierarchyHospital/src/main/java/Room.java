@@ -3,6 +3,7 @@ public class Room {
     private int roomNumber;
 
 
+
     public Room() {
     }
 
@@ -27,6 +28,10 @@ public class Room {
         this.roomNumber = roomNumber;
     }
     public void addPatient(Patient p){
+
+    }
+    public double calculateAmount(int days){
+        return days*this.price;
 
     }
     @Override

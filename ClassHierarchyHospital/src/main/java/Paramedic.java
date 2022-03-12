@@ -1,3 +1,4 @@
-public class Paramedic extends Person{
-    private int salary;
+public class Paramedic extends Worker{
+
 }
+

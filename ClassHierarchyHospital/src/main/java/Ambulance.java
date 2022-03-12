@@ -12,4 +12,36 @@ public class Ambulance {
         this.paramedic = paramedic;
         this.ambulanceDriver = ambulanceDriver;
     }
+
+    public String getModel() {
+        return model;
+    }
+
+    public void setModel(String model) {
+        this.model = model;
+    }
+
+    public Paramedic getParamedic() {
+        return paramedic;
+    }
+
+    public void setParamedic(Paramedic paramedic) {
+        this.paramedic = paramedic;
+    }
+
+    public AmbulanceDriver getAmbulanceDriver() {
+        return ambulanceDriver;
+    }
+
+    public void setAmbulanceDriver(AmbulanceDriver ambulanceDriver) {
+        this.ambulanceDriver = ambulanceDriver;
+    }
+
+    public boolean isFree() {
+        return free;
+    }
+
+    public void setFree(boolean free) {
+        this.free = free;
+    }
 }

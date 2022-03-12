@@ -1,4 +1,4 @@
-public class AmbulanceDriver extends Person{
-    private int salary;
+public class AmbulanceDriver extends Worker{
+
 
 }

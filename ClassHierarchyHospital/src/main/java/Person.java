@@ -37,10 +37,4 @@ public class Person {
         this.age = age;
     }
 
-    //it compares age
-    @Override
-    public boolean equals(Object obj) {
-        Patient p = (Patient) obj;
-        return this.age < p.getAge();
-    }
 }

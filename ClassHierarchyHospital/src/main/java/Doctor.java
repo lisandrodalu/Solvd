@@ -1,18 +1,18 @@
-public class Doctor extends Person{
+public class Doctor extends Worker{
 
     private String specialty;
     private int medicalID;
-    private long salary;
+
 
 
     public Doctor() {
     }
 
     public Doctor(String name, String id, int age, String specialty, int medicalID, long salary) {
-        super(name, id, age);
+        super(name, id, age,salary);
         this.specialty = specialty;
         this.medicalID = medicalID;
-        this.salary = salary;
+
     }
 
     public String getSpecialty() {
@@ -31,11 +31,5 @@ public class Doctor extends Person{
         this.medicalID = medicalID;
     }
 
-    public long getSalary() {
-        return salary;
-    }
 
-    public void setSalary(long salary) {
-        this.salary = salary;
-    }
 }
