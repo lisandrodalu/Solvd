@@ -20,4 +20,14 @@ public class Hospital {
         this.doctors = doctors;
         this.ambulance = ambulance;
     }
+    public void enterHospital(Patient p){
+        this.waitingRoom.enterPatient(p);
+    }
+    public void addDoctor(Doctor d){
+        this.doctors.add(d);
+
+    }
+    public void assignRoom(Room r,Patient p){
+         r.addPatient(p);
+    }
 }

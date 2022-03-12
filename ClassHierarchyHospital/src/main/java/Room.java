@@ -1,9 +1,36 @@
 public class Room {
     private int price;
-    private int capacity;
+    private int roomNumber;
 
-    public Room(int price, int capacity) {
+
+    public Room() {
+    }
+
+    public Room(int price,int roomNumber) {
         this.price = price;
-        this.capacity = capacity;
+        this.roomNumber = roomNumber;
+    }
+
+    public int getPrice() {
+        return price;
+    }
+
+    public int getRoomNumber() {
+        return roomNumber;
+    }
+
+    public void setPrice(int price) {
+        this.price = price;
+    }
+
+    public void setRoomNumber(int roomNumber) {
+        this.roomNumber = roomNumber;
+    }
+    public void addPatient(Patient p){
+
+    }
+    @Override
+    public String toString() {
+        return "Room Nro: "+this.roomNumber+" Price: "+this.price;
     }
 }
