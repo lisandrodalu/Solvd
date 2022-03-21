@@ -1,6 +1,6 @@
 import java.util.Objects;
 
-public class Doctor extends Worker{
+public class Doctor extends Employee {
 
     private String specialty;
     private int medicalID;

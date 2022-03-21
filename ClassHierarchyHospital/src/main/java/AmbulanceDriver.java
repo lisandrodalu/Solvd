@@ -1,4 +1,4 @@
-public class AmbulanceDriver extends Worker{
+public class AmbulanceDriver extends Employee {
     public AmbulanceDriver() {
     }
 

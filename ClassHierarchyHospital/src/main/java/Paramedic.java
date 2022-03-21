@@ -1,4 +1,4 @@
-public class Paramedic extends Worker{
+public class Paramedic extends Employee {
 
     public Paramedic() {
     }

@@ -1,6 +1,6 @@
 import java.util.ArrayList;
 
-public class Nurse extends Worker{
+public class Nurse extends Employee {
     private ArrayList<Medicine> medicine = new ArrayList<>();
 
     public Nurse() {

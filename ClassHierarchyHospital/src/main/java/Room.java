@@ -1,6 +1,6 @@
 import java.util.Objects;
 
-public class Room {
+public abstract class Room {
     private int price;
     private int roomNumber;
 
@@ -27,9 +27,7 @@ public class Room {
     public void setRoomNumber(int roomNumber) {
         this.roomNumber = roomNumber;
     }
-    public void addPatient(Patient p){
-
-    }
+    public abstract void addPatient(Patient p);
     public double calculateAmount(int days){
         return days*this.price;
 

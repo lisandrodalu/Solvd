@@ -1,10 +1,10 @@
-public class Worker extends Person{
+public class Employee extends Person{
     protected long salary;
 
-    public Worker(){
+    public Employee(){
 
     }
-    public Worker(String name, String id, int age, long salary) {
+    public Employee(String name, String id, int age, long salary) {
         super(name, id, age);
         this.salary = salary;
     }
