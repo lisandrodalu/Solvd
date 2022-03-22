@@ -1,5 +1,7 @@
 package model;
 
+import exceptions.FullRoomException;
+
 public class PrivateRoom extends Room{
 
     private Patient patient; // only one
@@ -23,8 +25,11 @@ public class PrivateRoom extends Room{
     }
 
     @Override
-    public void addPatient(Patient p) {
-        if(this.free)
+    public void addPatient(Patient p) throws FullRoomException {
+        if(this.free) {
             this.patient = p;
+        }
+        else
+            throw new FullRoomException("The room is full");
     }
 }

@@ -1,5 +1,7 @@
 package model;
 
+import exceptions.FullRoomException;
+
 import java.util.ArrayList;
 
 public class CommonRoom extends Room {
@@ -31,11 +33,13 @@ public class CommonRoom extends Room {
     }
 
     @Override
-    public void addPatient(Patient p) {
+    public void addPatient(Patient p) throws FullRoomException {
         if(this.patients.size()<=this.capacity){
             this.patients.add(p);
             this.capacity--;
         }
+        else
+            throw new FullRoomException("The room is full");
     }
 
     @Override

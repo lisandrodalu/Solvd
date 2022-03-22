@@ -1,5 +1,7 @@
 package model;
 
+import exceptions.FullRoomException;
+
 import java.util.Objects;
 
 public abstract class Room {
@@ -29,7 +31,7 @@ public abstract class Room {
     public void setRoomNumber(int roomNumber) {
         this.roomNumber = roomNumber;
     }
-    public abstract void addPatient(Patient p);
+    public abstract void addPatient(Patient p) throws FullRoomException;
     public double calculateAmount(int days){
         return days*this.price;
 

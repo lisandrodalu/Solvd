@@ -1,5 +1,7 @@
 package model;
 
+import exceptions.FullRoomException;
+
 import java.util.ArrayList;
 
 public class WaitingRoom {
@@ -30,12 +32,15 @@ public class WaitingRoom {
         this.patients = patients;
     }
 
-    public void enterPatient(Patient p){
-        if(this.patients.size()<capacity)
+    public void enterPatient(Patient p) throws FullRoomException {
+        if(capacity>0)
         {
             this.capacity--;
             this.patients.add(p);
         }
+        else
+            throw new FullRoomException("The room is full");
+
     }
     public void removePatient(Patient p){
         this.capacity++;

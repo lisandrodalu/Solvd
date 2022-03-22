@@ -1,7 +1,7 @@
 package model;
 
 public class Ambulance {
-    private String model;
+    private String model = "Toyota V6";
     private Paramedic paramedic;
     private AmbulanceDriver ambulanceDriver;
     private boolean free = true;

@@ -7,10 +7,10 @@ public class Patient extends Person implements Comparable<Object> {
     private int patientNumber; // number in the hospital system
     private String medicalInsurance;
 
-    public Patient(String name, String id, int age, String medicalInsurance, int patientNumber) {
+    public Patient(String name, String id, int age, String medicalInsurance) {
         super(name, id, age);
         this.medicalInsurance = medicalInsurance;
-        this.patientNumber = patientNumber;
+
     }
 
     public int getPatientNumber() {

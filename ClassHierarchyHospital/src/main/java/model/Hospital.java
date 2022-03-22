@@ -1,5 +1,7 @@
 package model;
 
+import exceptions.FullRoomException;
+
 import java.util.ArrayList;
 
 public class Hospital {
@@ -9,8 +11,9 @@ public class Hospital {
     private WaitingRoom waitingRoom = new WaitingRoom();
     private ArrayList<Room> rooms = new ArrayList<>();
     private ArrayList<Doctor> doctors = new ArrayList<>();
-    private Ambulance ambulance;
+    private Ambulance ambulance = new Ambulance();
     private PatientsDataBase patientsDataBase = new PatientsDataBase();
+    private int number  = 0;
 
 
 
@@ -22,7 +25,7 @@ public class Hospital {
         this.adress = adress;
 
     }
-    public void enterHospital(Patient p){
+    public void enterHospital(Patient p) throws FullRoomException {
         this.waitingRoom.enterPatient(p);
     }
     public void attendPatient(Patient p){
@@ -36,8 +39,21 @@ public class Hospital {
     public void addRoom(Room r){
         this.rooms.add(r);
     }
-    public void assignRoom(Room r,Patient p){
+    public void assignRoom(Room r,Patient p) throws FullRoomException {
          r.addPatient(p);
+    }
+    public void ambulanceTrip(Paramedic p,AmbulanceDriver driver){
+        this.ambulance.setFree(false);
+        this.ambulance.setAmbulanceDriver(driver);
+        this.ambulance.setParamedic(p);
+    }
+
+    public Ambulance getAmbulance() {
+        return ambulance;
+    }
+
+    public void setAmbulance(Ambulance ambulance) {
+        this.ambulance = ambulance;
     }
 
     @Override
