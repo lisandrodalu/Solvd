@@ -5,10 +5,12 @@ public class Main {
 
     public static void main(String[] args) {
         Person person = new Person();
+        LOGGER.debug("Hola");
         try {
             person.setAge(-1);
         } catch (AgeException e) {
-            LOGGER.debug(e.getMessage());
+
+            LOGGER.info(e.getMessage());
         }
         finally {
 
