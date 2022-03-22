@@ -1,3 +1,5 @@
+package model;
+
 public class Medicine {
     private String brandName;
     private String drugName;

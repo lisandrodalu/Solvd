@@ -5,16 +5,9 @@ public class Main {
 
     public static void main(String[] args) {
         Person person = new Person();
-        LOGGER.debug("Hola");
-        try {
-            person.setAge(-1);
-        } catch (AgeException e) {
-
-            LOGGER.info(e.getMessage());
-        }
-        finally {
-
-        }
+        LOGGER.info("Hola");
+        LOGGER.debug("debug");
+        LOGGER.error("");
     }
 
     }

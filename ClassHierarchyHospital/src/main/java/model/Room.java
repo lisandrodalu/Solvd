@@ -1,3 +1,5 @@
+package model;
+
 import java.util.Objects;
 
 public abstract class Room {
@@ -34,7 +36,7 @@ public abstract class Room {
     }
     @Override
     public String toString() {
-        return "Room Nro: "+this.roomNumber+" Price: "+this.price;
+        return "model.Room Nro: "+this.roomNumber+" Price: "+this.price;
     }
 
     @Override

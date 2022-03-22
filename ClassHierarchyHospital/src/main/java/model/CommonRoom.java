@@ -1,6 +1,8 @@
+package model;
+
 import java.util.ArrayList;
 
-public class CommonRoom extends Room{
+public class CommonRoom extends Room {
     private int capacity;
     ArrayList<Patient> patients = new ArrayList<>();
 
@@ -38,6 +40,6 @@ public class CommonRoom extends Room{
 
     @Override
     public String toString() {
-        return super.toString() + " Type: CommonRoom ";
+        return super.toString() + " Type: model.CommonRoom ";
     }
 }

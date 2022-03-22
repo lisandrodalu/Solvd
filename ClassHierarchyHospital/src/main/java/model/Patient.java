@@ -1,3 +1,5 @@
+package model;
+
 import java.util.Objects;
 
 public class Patient extends Person implements Comparable<Object> {
@@ -54,7 +56,7 @@ public class Patient extends Person implements Comparable<Object> {
 
     @Override
     public String toString() {
-        return "Patient= "+this.name + "Id: "+this.id +
+        return "model.Patient= "+this.name + "Id: "+this.id +
                 "patientNumber=" + patientNumber +
                 ", medicalInsurance='" + medicalInsurance ;
     }

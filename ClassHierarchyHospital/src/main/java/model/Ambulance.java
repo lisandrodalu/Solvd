@@ -1,3 +1,5 @@
+package model;
+
 public class Ambulance {
     private String model;
     private Paramedic paramedic;

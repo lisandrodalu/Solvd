@@ -1,3 +1,5 @@
+package model;
+
 public class PrivateRoom extends Room{
 
     private Patient patient; // only one

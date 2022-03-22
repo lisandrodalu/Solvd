@@ -1,9 +1,12 @@
+package model;
+
 import java.util.ArrayList;
 
 public class WaitingRoom {
      private int capacity;
     ArrayList<Patient> patients = new ArrayList<>();
     public WaitingRoom() {
+        this.capacity = 50; // 50 persons
     }
 
     public WaitingRoom(int capacity, ArrayList<Patient> patients) {

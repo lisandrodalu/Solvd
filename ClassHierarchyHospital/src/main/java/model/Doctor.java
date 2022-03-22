@@ -1,3 +1,5 @@
+package model;
+
 import java.util.Objects;
 
 public class Doctor extends Employee {
@@ -35,7 +37,7 @@ public class Doctor extends Employee {
 
     @Override
     public String toString() {
-        return "Doctor " +
+        return "model.Doctor " +
                 ", name='" + name +
                 "specialty='" + specialty + '\'' +
                 ", medicalID=" + medicalID  + '\'' +

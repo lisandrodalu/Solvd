@@ -1,10 +1,12 @@
+package model;
+
 import java.util.ArrayList;
 
 public class Hospital {
     private String name;
+    private String city;
     private String adress;
     private WaitingRoom waitingRoom = new WaitingRoom();
-
     private ArrayList<Room> rooms = new ArrayList<>();
     private ArrayList<Doctor> doctors = new ArrayList<>();
     private Ambulance ambulance;
@@ -14,23 +16,25 @@ public class Hospital {
 
     public void Hospital(){}
 
-    public Hospital(String name, String adress, WaitingRoom waitingRoom, ArrayList<Room> rooms, ArrayList<Doctor> doctors, Ambulance ambulance) {
+    public Hospital(String name,String city, String adress) {
         this.name = name;
+        this.city = city;
         this.adress = adress;
-        this.waitingRoom = waitingRoom;
-        this.rooms = rooms;
-        this.doctors = doctors;
-        this.ambulance = ambulance;
+
     }
     public void enterHospital(Patient p){
         this.waitingRoom.enterPatient(p);
     }
     public void attendPatient(Patient p){
         this.waitingRoom.removePatient(p);
+        this.patientsDataBase.addPatient(p);
     }
     public void addDoctor(Doctor d){
         this.doctors.add(d);
 
+    }
+    public void addRoom(Room r){
+        this.rooms.add(r);
     }
     public void assignRoom(Room r,Patient p){
          r.addPatient(p);
@@ -43,4 +47,5 @@ public class Hospital {
                 ", adress='" + adress + '\'' +
                 '}';
     }
+
 }

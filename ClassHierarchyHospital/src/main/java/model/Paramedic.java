@@ -1,3 +1,5 @@
+package model;
+
 public class Paramedic extends Employee {
 
     public Paramedic() {
