@@ -1,14 +1,13 @@
 package model;
 
-import javax.print.Doc;
 
 public class Appointment {
     private Doctor doctor;
-    private double price = 300;
+    private final double price = 300;
 
-    public Appointment(Doctor doctor, double price) {
+    public Appointment(Doctor doctor) {
         this.doctor= doctor;
-        this.price = price;
+
     }
 
     public Appointment() {
@@ -26,7 +25,5 @@ public class Appointment {
         return price;
     }
 
-    public void setPrice(double price) {
-        this.price = price;
-    }
+
 }

@@ -3,6 +3,7 @@ package model;
 import exceptions.FullRoomException;
 import exceptions.NonExistantDoctorException;
 import exceptions.NonExistantRoomException;
+import exceptions.OccupiedAmbulanceException;
 
 import java.util.ArrayList;
 
@@ -15,8 +16,6 @@ public class Hospital {
     private ArrayList<Doctor> doctors = new ArrayList<>();
     private Ambulance ambulance = new Ambulance();
     private PatientsDataBase patientsDataBase = new PatientsDataBase();
-    private int number  = 0;
-
 
 
     public void Hospital(){}
@@ -32,13 +31,16 @@ public class Hospital {
     }
     public void attendPatient(Patient p,int idDoctor) throws NonExistantDoctorException {
         this.waitingRoom.removePatient(p);
-        //if no existe
-        if(this.patientsDataBase.searchPatient(p))
-        this.patientsDataBase.addPatient(p);
-
+        Patient patient = this.patientsDataBase.searchPatient(p);
         Doctor doctor = searchDoctor(idDoctor);
-        if(doctor!=null)
-            p.getAppointment().setDoctor(doctor);
+        if(doctor!=null){
+            if(patient == null){
+                this.patientsDataBase.addPatient(p);
+                p.addAppointment(doctor);
+            }
+            else
+                patient.addAppointment(doctor);
+        }
         else
             throw new NonExistantDoctorException("That doctor whith id: "+idDoctor+" does not exist in the system");
     }
@@ -57,10 +59,18 @@ public class Hospital {
          else
              throw new NonExistantRoomException("The room with number "+roomNumber+" does not exist");
     }
-    public void ambulanceTrip(Paramedic p,AmbulanceDriver driver){
-        this.ambulance.setFree(false);
-        this.ambulance.setAmbulanceDriver(driver);
-        this.ambulance.setParamedic(p);
+    public void ambulanceTrip(Paramedic p,AmbulanceDriver driver) throws OccupiedAmbulanceException{
+        if(this.ambulance.isFree()){
+            this.ambulance.setFree(false);
+            this.ambulance.setAmbulanceDriver(driver);
+            this.ambulance.setParamedic(p);
+        }
+        else
+            throw new OccupiedAmbulanceException("The ambulance is occupied");
+
+    }
+    public void ambulanceFree(){
+        this.ambulance.setFree(true);
     }
 
 

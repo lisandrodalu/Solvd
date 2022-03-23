@@ -1,12 +1,13 @@
 package model;
 
+import java.util.ArrayList;
 import java.util.Objects;
 
 public class Patient extends Person implements Comparable<Object> {
 
     private int patientNumber; // number in the hospital system
     private String medicalInsurance;
-    private Appointment appointment = new Appointment();
+    private ArrayList<Appointment> appointments = new ArrayList<>();
 
     public Patient(String name, String id, int age, String medicalInsurance) {
         super(name, id, age);
@@ -30,13 +31,9 @@ public class Patient extends Person implements Comparable<Object> {
         this.medicalInsurance = medicalInsurance;
     }
 
-    public Appointment getAppointment() {
-        return appointment;
-    }
-
-    public void setAppointment(Appointment appointment) {
-        this.appointment = appointment;
-    }
+   public void addAppointment(Doctor d){
+        this.appointments.add(new Appointment(d));
+   }
 
     @Override
     public boolean equals(Object o) {
