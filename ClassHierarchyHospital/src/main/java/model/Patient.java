@@ -6,6 +6,7 @@ public class Patient extends Person implements Comparable<Object> {
 
     private int patientNumber; // number in the hospital system
     private String medicalInsurance;
+    private Appointment appointment = new Appointment();
 
     public Patient(String name, String id, int age, String medicalInsurance) {
         super(name, id, age);
@@ -27,6 +28,14 @@ public class Patient extends Person implements Comparable<Object> {
 
     public void setMedicalInsurance(String medicalInsurance) {
         this.medicalInsurance = medicalInsurance;
+    }
+
+    public Appointment getAppointment() {
+        return appointment;
+    }
+
+    public void setAppointment(Appointment appointment) {
+        this.appointment = appointment;
     }
 
     @Override

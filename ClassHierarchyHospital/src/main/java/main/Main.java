@@ -1,10 +1,11 @@
 package main;
 
 import exceptions.FullRoomException;
+import exceptions.NonExistantDoctorException;
+import exceptions.NonExistantRoomException;
 import model.*;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
-import java.util.ArrayList;
 
 public class Main {
     private final static Logger LOGGER = LogManager.getLogger(Main.class);
@@ -22,9 +23,17 @@ public class Main {
           LOGGER.info(e.getMessage());
         }
         try {
-            hospital.assignRoom(commonRoom,patient);
+            hospital.attendPatient(patient,121);
+        } catch (NonExistantDoctorException e) {
+          LOGGER.info(e.getMessage());
+        }
+        try {
+            hospital.assignRoom(2,patient);
+        } catch (NonExistantRoomException e) {
+            LOGGER.error(e);
         } catch (FullRoomException e) {
             LOGGER.info(e.getMessage());
         }
+
     }
 }

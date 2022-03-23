@@ -1,6 +1,8 @@
 package model;
 
 import exceptions.FullRoomException;
+import exceptions.NonExistantDoctorException;
+import exceptions.NonExistantRoomException;
 
 import java.util.ArrayList;
 
@@ -28,10 +30,19 @@ public class Hospital {
     public void enterHospital(Patient p) throws FullRoomException {
         this.waitingRoom.enterPatient(p);
     }
-    public void attendPatient(Patient p){
+    public void attendPatient(Patient p,int idDoctor) throws NonExistantDoctorException {
         this.waitingRoom.removePatient(p);
+        //if no existe
+        if(this.patientsDataBase.searchPatient(p))
         this.patientsDataBase.addPatient(p);
+
+        Doctor doctor = searchDoctor(idDoctor);
+        if(doctor!=null)
+            p.getAppointment().setDoctor(doctor);
+        else
+            throw new NonExistantDoctorException("That doctor whith id: "+idDoctor+" does not exist in the system");
     }
+
     public void addDoctor(Doctor d){
         this.doctors.add(d);
 
@@ -39,14 +50,19 @@ public class Hospital {
     public void addRoom(Room r){
         this.rooms.add(r);
     }
-    public void assignRoom(Room r,Patient p) throws FullRoomException {
-         r.addPatient(p);
+    public void assignRoom(int roomNumber,Patient p) throws FullRoomException, NonExistantRoomException {
+         Room  room= searchRoom(roomNumber);
+         if(room!=null)
+         room.addPatient(p);
+         else
+             throw new NonExistantRoomException("The room with number "+roomNumber+" does not exist");
     }
     public void ambulanceTrip(Paramedic p,AmbulanceDriver driver){
         this.ambulance.setFree(false);
         this.ambulance.setAmbulanceDriver(driver);
         this.ambulance.setParamedic(p);
     }
+
 
     public Ambulance getAmbulance() {
         return ambulance;
@@ -56,6 +72,23 @@ public class Hospital {
         this.ambulance = ambulance;
     }
 
+    public Room searchRoom(int number){
+        Room room = null;
+        for (int i=0;i<rooms.size();i++){
+            if(rooms.get(i).getRoomNumber()==number)
+                room = rooms.get(i);
+        }
+        return room;
+
+    }
+    public Doctor searchDoctor(int number){
+        Doctor doctor = null;
+        for (int i=0;i<doctors.size();i++){
+            if(doctors.get(i).getMedicalID()==number)
+                doctor = doctors.get(i);
+        }
+        return doctor;
+    }
     @Override
     public String toString() {
         return "Hospital{" +

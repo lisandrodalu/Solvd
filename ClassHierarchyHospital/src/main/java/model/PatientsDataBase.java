@@ -1,5 +1,6 @@
 package model;
 
+import java.util.Iterator;
 import java.util.TreeSet;
 
 public class PatientsDataBase {
@@ -29,5 +30,15 @@ public class PatientsDataBase {
         this.num++;
         p.setPatientNumber(num);
         patients.add(p);
+    }
+    public boolean searchPatient(Patient patient){
+        boolean exist = false;
+        Iterator<Patient> it = this.patients.iterator();
+        while(it.hasNext() && !exist){
+            Patient actual = it.next();
+            if(actual.getId() == patient.id)
+                exist = true;
+        }
+        return exist;
     }
 }
