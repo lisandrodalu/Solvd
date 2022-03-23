@@ -1,5 +1,7 @@
 package model;
 
+import exceptions.InvalidAgeException;
+
 import java.util.ArrayList;
 import java.util.Objects;
 
@@ -9,7 +11,7 @@ public class Patient extends Person implements Comparable<Object> {
     private String medicalInsurance;
     private ArrayList<Appointment> appointments = new ArrayList<>();
 
-    public Patient(String name, String id, int age, String medicalInsurance) {
+    public Patient(String name, String id, int age, String medicalInsurance) throws InvalidAgeException {
         super(name, id, age);
         this.medicalInsurance = medicalInsurance;
 

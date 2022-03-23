@@ -9,10 +9,10 @@ public class PrivateRoom extends Room{
     public PrivateRoom() {
     }
 
-    public PrivateRoom(int price, int capacity, Patient patient) {
+    public PrivateRoom(int price, int capacity) {
         super(price, capacity);
-        this.patient = patient;
         this.free = true;
+        this.patient = null;
 
     }
 

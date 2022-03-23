@@ -1,5 +1,7 @@
 package model;
 
+import exceptions.InvalidAgeException;
+
 import java.util.Objects;
 
 public class Doctor extends Employee {
@@ -12,7 +14,7 @@ public class Doctor extends Employee {
     public Doctor() {
     }
 
-    public Doctor(String name, String id, int age, String specialty, int medicalID, long salary) {
+    public Doctor(String name, String id, int age, String specialty, int medicalID, long salary) throws InvalidAgeException {
         super(name, id, age,salary);
         this.specialty = specialty;
         this.medicalID = medicalID;
