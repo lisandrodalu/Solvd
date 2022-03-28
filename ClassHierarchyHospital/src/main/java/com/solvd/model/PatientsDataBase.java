@@ -1,4 +1,4 @@
-package model;
+package com.solvd.model;
 
 import java.util.Iterator;
 import java.util.TreeSet;

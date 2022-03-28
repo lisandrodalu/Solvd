@@ -1,6 +1,6 @@
-package model;
+package com.solvd.model;
 
-import exceptions.FullRoomException;
+import com.solvd.exceptions.FullRoomException;
 
 import java.util.ArrayList;
 
@@ -44,6 +44,6 @@ public class CommonRoom extends Room {
 
     @Override
     public String toString() {
-        return super.toString() + " Type: model.CommonRoom ";
+        return super.toString() + " Type: com.solvd.model.CommonRoom ";
     }
 }

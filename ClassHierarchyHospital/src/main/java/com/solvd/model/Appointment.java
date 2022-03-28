@@ -1,4 +1,4 @@
-package model;
+package com.solvd.model;
 
 
 public class Appointment {

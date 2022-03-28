@@ -1,4 +1,4 @@
-package exceptions;
+package com.solvd.exceptions;
 
 public class NonExistantRoomException extends Exception{
     public NonExistantRoomException() {

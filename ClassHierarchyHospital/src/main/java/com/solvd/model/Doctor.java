@@ -1,6 +1,6 @@
-package model;
+package com.solvd.model;
 
-import exceptions.InvalidAgeException;
+import com.solvd.exceptions.InvalidAgeException;
 
 import java.util.Objects;
 
@@ -39,7 +39,7 @@ public class Doctor extends Employee {
 
     @Override
     public String toString() {
-        return "model.Doctor " +
+        return "com.solvd.model.Doctor " +
                 ", name='" + name +
                 "specialty='" + specialty + '\'' +
                 ", medicalID=" + medicalID  + '\'' +

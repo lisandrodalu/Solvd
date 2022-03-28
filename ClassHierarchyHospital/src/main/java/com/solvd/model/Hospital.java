@@ -1,9 +1,9 @@
-package model;
+package com.solvd.model;
 
-import exceptions.FullRoomException;
-import exceptions.NonExistantDoctorException;
-import exceptions.NonExistantRoomException;
-import exceptions.OccupiedAmbulanceException;
+import com.solvd.exceptions.FullRoomException;
+import com.solvd.exceptions.NonExistantDoctorException;
+import com.solvd.exceptions.NonExistantRoomException;
+import com.solvd.exceptions.OccupiedAmbulanceException;
 
 import java.util.ArrayList;
 

@@ -1,4 +1,4 @@
-package exceptions;
+package com.solvd.exceptions;
 
 public class FullRoomException extends Exception{
     public FullRoomException() {

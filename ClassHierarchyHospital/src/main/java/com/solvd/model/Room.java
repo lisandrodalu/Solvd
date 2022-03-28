@@ -1,6 +1,6 @@
-package model;
+package com.solvd.model;
 
-import exceptions.FullRoomException;
+import com.solvd.exceptions.FullRoomException;
 
 import java.util.Objects;
 
@@ -38,7 +38,7 @@ public abstract class Room {
     }
     @Override
     public String toString() {
-        return "model.Room Nro: "+this.roomNumber+" Price: "+this.price;
+        return "com.solvd.model.Room Nro: "+this.roomNumber+" Price: "+this.price;
     }
 
     @Override

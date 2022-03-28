@@ -1,7 +1,7 @@
-package main;
+package com.solvd.main;
 
-import exceptions.*;
-import model.*;
+import com.solvd.exceptions.*;
+import com.solvd.model.*;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 

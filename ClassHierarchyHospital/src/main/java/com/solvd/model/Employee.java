@@ -1,6 +1,6 @@
-package model;
+package com.solvd.model;
 
-import exceptions.InvalidAgeException;
+import com.solvd.exceptions.InvalidAgeException;
 
 public class Employee extends Person{
     protected long salary;

@@ -1,6 +1,6 @@
-package model;
+package com.solvd.model;
 
-import exceptions.FullRoomException;
+import com.solvd.exceptions.FullRoomException;
 
 public class PrivateRoom extends Room{
 

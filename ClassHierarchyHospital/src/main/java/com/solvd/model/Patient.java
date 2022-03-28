@@ -1,6 +1,6 @@
-package model;
+package com.solvd.model;
 
-import exceptions.InvalidAgeException;
+import com.solvd.exceptions.InvalidAgeException;
 
 import java.util.ArrayList;
 import java.util.Objects;
@@ -64,7 +64,7 @@ public class Patient extends Person implements Comparable<Object> {
 
     @Override
     public String toString() {
-        return "model.Patient= "+this.name + "Id: "+this.id +
+        return "com.solvd.model.Patient= "+this.name + "Id: "+this.id +
                 "patientNumber=" + patientNumber +
                 ", medicalInsurance='" + medicalInsurance ;
     }
