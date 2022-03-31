@@ -1,31 +1,33 @@
 package com.solvd;
 
-public class LinkedList<T>{
+public class CustomLinkedList<T>{
 
     private Node head;
-    private int index;
 
-    public LinkedList() {
+
+    public CustomLinkedList() {
         this.head = new Node(null);
-        this.index = 0;
     }
-    public void addNode(T data){
+    public void add(T data){
         Node newNode  = new Node(data);
         Node actual = this.head;
+
         while(actual.getNext()!=null){
             actual = actual.getNext();
         }
+
+        if(this.head.getData()==null)
+            this.head=newNode;
+        else
         actual.setNext(newNode);
-        index++;
+
     }
+    //Adds in an specific index
 
     public Node getHead() {
         return head;
     }
 
-    public int getIndex() {
-        return index;
-    }
 
     @Override
     public String toString() {
