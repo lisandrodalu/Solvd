@@ -38,7 +38,7 @@ public class Main {
         }
         try {
             hospital.attendPatient(patient,121);
-        } catch (NonExistantDoctorException e) {
+        }catch (NonExistantDoctorException e) {
           LOGGER.info(e.getMessage());
         }
         try {

@@ -2,16 +2,18 @@ package com.solvd.model;
 
 import com.solvd.exceptions.FullRoomException;
 
-import java.util.ArrayList;
+//import java.util.ArrayList;
+import java.util.PriorityQueue;
 
 public class WaitingRoom {
      private int capacity;
-    ArrayList<Patient> patients = new ArrayList<>();
+     PriorityQueue<Patient> patients = new PriorityQueue<>();
+
     public WaitingRoom() {
         this.capacity = 50; // 50 persons
     }
 
-    public WaitingRoom(int capacity, ArrayList<Patient> patients) {
+    public WaitingRoom(int capacity, PriorityQueue<Patient> patients) {
         this.capacity = capacity;
         this.patients = patients;
     }
@@ -24,11 +26,11 @@ public class WaitingRoom {
         this.capacity = capacity;
     }
 
-    public ArrayList<Patient> getPatients() {
+    public PriorityQueue<Patient> getPatients() {
         return patients;
     }
 
-    public void setPatients(ArrayList<Patient> patients) {
+    public void setPatients(PriorityQueue<Patient> patients) {
         this.patients = patients;
     }
 
@@ -37,6 +39,7 @@ public class WaitingRoom {
         {
             this.capacity--;
             this.patients.add(p);
+
         }
         else
             throw new FullRoomException("The room is full");
