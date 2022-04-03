@@ -6,17 +6,17 @@ public class CustomLinkedList<T>{
 
 
     public CustomLinkedList() {
-        this.head = new Node(null);
+        this.head = null;
     }
     public void add(T data){
         Node newNode  = new Node(data);
         Node actual = this.head;
 
-        while(actual.getNext()!=null){
+        while(actual!=null && actual.getNext()!=null){
             actual = actual.getNext();
         }
 
-        if(this.head.getData()==null)
+        if(this.head==null)
             this.head=newNode;
         else
         actual.setNext(newNode);
@@ -31,7 +31,7 @@ public class CustomLinkedList<T>{
 
     @Override
     public String toString() {
-        Node actual  = head;
+        Node actual  =this.head;
         String result = "";
         while(actual!=null){
             result+=actual.getData().toString()+" ";
