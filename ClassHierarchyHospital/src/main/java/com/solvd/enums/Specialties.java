@@ -1,0 +1,5 @@
+package com.solvd.enums;
+
+enum Specialties {
+    SURGERY,UROLOGY,PSYCHIATRY,PEDIATRICS,DERMATOLOY,NEUROLOGY,ANESTHESIOLOGY
+}

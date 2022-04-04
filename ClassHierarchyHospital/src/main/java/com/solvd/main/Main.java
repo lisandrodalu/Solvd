@@ -1,5 +1,6 @@
 package com.solvd.main;
 
+import com.solvd.enums.Specialties;
 import com.solvd.exceptions.*;
 import com.solvd.model.*;
 import org.apache.logging.log4j.LogManager;
@@ -50,5 +51,6 @@ public class Main {
         }
 
         hospital.ambulanceTrip(new Paramedic(),new AmbulanceDriver());
+
     }
 }
