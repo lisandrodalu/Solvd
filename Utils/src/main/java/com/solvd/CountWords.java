@@ -11,17 +11,15 @@ import java.util.HashMap;
 public class CountWords {
     private final static Logger LOGGER = LogManager.getLogger(CountWords.class);
     public static void main(String[] args) {
-
         String article = null;
         try {
             article = FileUtils.readFileToString(new File("src/main/resources/article.txt"),"UTF-8").toLowerCase();
         } catch (IOException e) {
             LOGGER.error(e);
         }
+        //StringUtils.split(article,"\\s+");
         article = StringUtils.replaceChars(article,'"',' ');
-        article = StringUtils.replaceChars(article,'.',' ');
-        article = StringUtils.replaceChars(article,',',' ');
-        String[] words = article.split("\\s+");
+        String[] words = article.split("[-:/,.\s\n\t]");
         HashMap<String, Integer> unique= new HashMap<>();
         for(String str:words){
             if(unique.containsKey(str)){
@@ -30,6 +28,10 @@ public class CountWords {
             else
                 unique.put(str,1);
         }
-        System.out.println(unique.toString());
+        try {
+            FileUtils.writeStringToFile(new File("src/main/resources/result.txt"),"Unique words: "+unique.size()+"\n "+unique.toString(),"UTF-8");
+        } catch (IOException e) {
+            LOGGER.error(e);
+        }
     }
 }

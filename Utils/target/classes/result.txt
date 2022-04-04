@@ -1,0 +1,110 @@
+Unique words: 981
+ {=306, reuse=1, hands=1, functions=2, objects=1, awful=1, your=28, remote=1, building=6, without=10, these=3, quote=1, lego=1, saves=1, would=2, —=2, because=4, ten=3, moving=2, dealing=1, meanwhile=1, trashy=1, require=1, cdn=1, rewrite=1, 0=1, 1=1, [”loose=1, 2=1, 3=1, folder=1, util=4, 4=1, 5=2, left=1, 6=1, 7=2, “delete=1, detail=1, “util”=1, much=13, providing=1, weeks=1, turd=1, roll=1, talking=1, turn=1, example=5, realising=1, result=4, corners=2, same=9, (without=1, 
+
+when=1, produced”=1, 
+
+in=2, policy=3, a=105, imap=3, time”=1, d=1, sets=1, learn=1, kernel=1, 
+
+it=2, i=6, the=111, component=1, fast=1, throw=3, loosely=2, deploying=2, obvious=1, days=1, wrap=3, standard=1, couple=2, powered=1, “everything=1, generates=1, good=11, got=1, decomposing=1, deploy=2, wish=1, hacks=1, layers=2, implement=2, pasted=2, 
+
+you=1, finish=1, protocols=1, “lines=2, others=4, making=6, need=4, its=2, pay=1, often=9, interleaved=1, code
+building=1, characterised=1, check=1, list=1, encoding=2, users=2, wire=1, external=2, success=2, loose=6, http=5, therefore=1, that’s=2, formats=1, choose=1, paste=5, interface=4, directory=3, engine=1, scope=1, end=6, hard=11, lines=5, mistake=2, pilot=1, identify=1, halfway=2, message=1, filesystem=1, special=1, better=1, with=24, environment=1, there=3, handling=10, happens=1, smaller=3, called=2, release=1, changing=6, rid=2, utilities=1, pipelining=1, faults=1, years=1, number=2, experiment=2, odds=1, write=18, similar=1, 
+
+monorepos=1, nothing=2, understand=1, anyhow=1, distributed=1, handle=7, isolation=1, underlying=1, slowly=1, 
+
+(i’m=1, system=8, million=1, 400=1, even=2, 
+
+to=1, module’
+
+when=1, appearing=1, hash=2, larger=1, other=11, save=1, kinds=1, functionality=1, isolating=1, frankly=1, top=4, too=12, have=15, decisions=2, share=2, redundancy=2, snowflake=1, question=1, homebrew=1, framework=2, requiring=1, regard=1, atop=4, logic=4, thousand=1, 2003
+
+erlang=1, almost=2, base64=1, suits=1, pages=1, copies=1, wake=1, earlier=1, etc=1, whether=1, function=6, links=1, all=5, always=2, new=8, took=2, comparison=1, already=1, everyone=1, swap=1, introducing=1, shall=1, less=3, adventure=1, apis=7, try=5, coupled=3, supervisor=3, unix=1, badly=1, workflows=1, shorthand=1, around=1, simpler=5, it’s=10, running=1, times=4, similarly=2, and=65, today=2, design=2, define=1, working=1, tokens=1, urllib3=3, harder=3, library”=1, tied=2, 
+
+my=1, requirement=1, specific=3, rows=1, any=6, code
+you’ve=1, chooses=1, intuitive=1, ewd=1, risks=1, application=2, until=1, maintenance=2, verbosity=2, clumsy=1, accumulating=1, maintain=2, anywhere=1, professional=1, decided=1, ‘founder=1, merge=1, api=9, state=2, logic)=1, coupling”]=1, boilerplate
+despite=1, using=6, cache=1, merging=1, want=3, expected=1, night=1, opposite=1, each=9, 000=3, argues=1, directory”=1, atomic=1, creating=1, must=3, styles=1, feels=1, unpleasantly=1, cut=1, perfectly=1, maybe=3, probably=1, frequently=1, regrets=1, document=1, another=7, piecewise=2, giving=2, 
+
+even=2, two=3, tradeoff=1, anyway=1, worth=1, knack=1, found=1, are=34, does=5, taken=1, recompiling=1, pasting=2, where=5, broader=1, popular=2, gives=1, broken=1, think=2, empathy=1, decoupling=2, ‘each=2, replaced=1, code’=3, services=1, such=1, doesn’t=3, ask=1, 
+
+[start]=1, 
+
+
+
+step=8, polish=1, thing=2, fashion=1, through=4, 
+
+it’s=4, principle=3, 
+
+error=1, twitter’s=1, developing=1, microsoft=2, lifecycle=1, contaminating=1, features=3, either=1, pipelines=1, paying=1, rewriting=1, […]=1, things=4, yourself=2, has=6, those=2, monoliths=1, worry=1, cater=1, endeavours=1, last=1, might=2, significant=1, catalogue=1, watched=1, checks=1, involved=1, easiest=3, name=1, fixed=1, uuids=1, benefits=1, away=6, 
+
+unfortunately=1, distance=1, impossible=2, you’re=6, description=1, erlang=1, effort=1, anything=2, usable=1, not=21, ends=3, now=2, hence=1, supporting=1, lived=1, painful=1, 
+
+i’m=2, interfaces=3, hours=1, armstrong=1, breaks=1, introduce=1, libraries=4, start=2, was=2, lowering=1, yet=1, windows=1, way=7, disposable=1, generic=1, manage=1, can’t=2, what=9, separating=1, time=14, happy=1, program=2, when=15, three=1, 
+
+although=2, 
+
+by=2, collections=1, far=3, options=2, trap=1, plan=1, case=1, grows=1, give=3, images=1, suppressing=1, limiting=1, creative=1, dependencies=3, saving=1, rely=3, 
+
+layering=1, requires=1, reliability=1, pattern=1, flags=2, exercise=1, layer=2, gain=1, lot=7, computer=1, ways=2, web=3, older=1, means=1, touching=1, more=20, 
+
+instead=2, 
+
+how=1, wrong=1, pipeline=1, deleting=1, reluctantly=1, choice=2, stuff=4, quick=1, code
+being=1, before=1, tell=2, replace=2, simple=5, used=1, finagle=1, protocol=3, looks=2, responsibilities=2, few=2, day=1, runtime=3, done=2, both=2, most=3, important=2, absolutely=1, keep=5, managing=1, who=1, advocating=1, game=1, part=3, intelligibly=1, why=2, duplicating=1, point=1, necessarily=1, database=1, restarted=2, browser=1, psychic=1, designed=3, authentication=1, 
+
+feature=1, rest=3, amount=2, process=5, move=1, built=1, enough=2, gets=3, duplication=1, 
+
+for=1, third=3, someone=1, build=10, neither=1, code
+the=1, uses=1, further=1, front=1, user=2, account=1, bad=2, bring=1, advance=1, fit=1, suffer=1, inside?
+
+error=1, assumption=1, you=51, knowledge=1, gaining=1, happen=1, databases=1, grow=2, ad=1, sure=1, going=3, impact=1, am=2, an=10, easy=7, as=13, at=12, flexible=1, transient=1, trying=3, turning=2, domain=1, hoc=1, be=14, comes=1, stewart
+
+a=1, interweave=1, how=7, isolate=2, see=3, systems=4, won’t=3, responsibility=1, composition=1, by=12, mind=5, litter=1, set=2, business=3, keeping=1, quicker=3, possible=1, right=3, co=1, gaps=1, kits=1, deleted=2, calls=1, boilerplate=4, series=1, scotus=1, ‘game=1, config=1, putting=1, added=1, (what=2, sometimes=3, sites=1, language=1, do=7, down=2, latex=1, observe=1, hold=1, exploratory=1, scars=1, later=4, programming=1, which=3, static=1, chrome=1, count=1, complain=1, never=2, take=2, embraced=1, parts=14, final=1, relatively=2, perlis=1, party=3, little=3, some=7, rather=4, for=12, “open=1, mistakes=4, back=1, capable=1, 
+
+like=1, timeout=1, layered=3, getting=2, perhaps=1, desktop=1, supervision=1, client=2, unfair=1, just=9, lump=1, retry=1, over=7, practical=1, bound=1, go=2, counter=1, concerns=2, tease=1, existing=1, although=3, material=1, 500=2, management=2, spectacular=1, developer=1, avoid=4, fresh=1, significantly=1, isn’t=6, do)=2, merges=1, explain=1, very=3, big=4, bit=3, attempt=1, soon=1, tables=1, lock=1, easily=1, usually=1, if=8, likely=3, python=1, large=2, in=34, made=1, is=73, it=56, being=7, foresight=1, talked=1, hoping=1, operate=2, hardest=1, annoying=1, become=1, template=1, server=2, works=3, clients=2, stamp=1, plate=1, eventually=1, you’ve=4, we’re=1, cycle=1, mention=1, problem’=1, file=8, library=9, composed=1, known=1, code
+when=1, 
+
+google=1, everything=1, together=5, implementations=1, side=1, may=3, break=2, within=1, could=2, change=17, off=3, verbose=1, hide=2, able=7, table”=1, fun=4, codes=2, use=16, while=1, microservices=1, that=31, suggests=1, coupling=7, edge=1, split=5, encounters=2, fine=1, find=2, than=21, me=2, different=5, 
+
+projects=1, months=1, workflow=1, level=1, pleasant=2, utf=1, follows=1, difficult=1, includes=1, ideas=1, my=1, fill=1, plus=1, becomes=1, unhygienic=1, lists=1, true=1, errors=6, problems=2, behind=1, code=75, tastes=1, legacy=2, minimising=1, 1036
+
+if=1, careful=1, best=3, mess=1, storage=1, brooks
+
+you=1, delete=25, sql=2, switch=1, ball=1, uncommon=1, considerable=1, of=84, repeat=2, 
+
+http=1, consumers=1, magnitude=1, ok=1, make=7, on=20, allows=2, bricks=1, processes=1, or=20, sre=1, control=1, 
+
+aside=1, 
+
+good=1, me)
+
+first=1, easier=13, opinions=1, supervisors=1, handles=2, increasingly=1, depend=1, intentional=1, impacting=1, about=8, intertwined=1, parsing=1, behalf=1, trees=1, 
+
+other=1, hiding=2, reason?=1, programmers=3, they=9, adventures=1, 10=1, breaking=2, modular=2, old=2, 18=1, module=3, outer=1, them=8, then=2, substantial=1, something=5, avoided=1, re=7, unique=5, except=2, programs=1, 20=1, shared=1, components=2, 25=2, don’t=13, experiments=1, global=1, seen=1, long=2, seem=2, pieces=1, into=6, unless=1, variety=1, fred=1, so=10, free=1, key=1, email=1, apart=3, iterate=1, dirty=1, variables=1, middle=1, bother=1, decision=1, strategies=1, one=23, makes=2, aren’t=1, started=2, many=5, beloved=1, releases=2, single=5, pull=1, tightly=2, handled=1, to=143, behaviours=2, operation=3, but=31, away;=1, separate=2, project=3, 
+
+we=1, layering=3, inside=3, esque=1, loop=1, roughly=1, process)
+
+the=1, details=1, written=1, 50=1, up=11, hides=1, us=2, monolith=1, query=1, this=12, please=1, fits=1, modules=2, parnas
+
+instead=1, especially=2, once=3, failure=4, know=5, 
+
+business=1, suggesting=1, 
+
+code=1, allow=2, doing=4, hindsight=1, idea=1, changes=4, frustrating=1, we=23, exits=2, common=6, every=4, extensible=2, successful=1, middleware=1, cases=1, again=2, filters=1, money=1, healthy=3, succeed=1, spent”=1, ones=4, spent’=1, base=7, software=11, reliably=1, whole=1, pieces
+big=1, feedback=1, reliable=1, problem=4, 
+
+i=4, didn’t=1, price=1, ordination=1, connection=2, abandoned=1, presence=1, effortlessly=1, 
+
+a=2, 
+
+becoming=1, between=2, hardcoding=1, still=2, work=1, “save=1, otp=1, come=1, developement=1, underneath=1, fail=2, examples=8, logging=1, internal=2, flag=2, 
+
+the=6, boilerplate
+boilerplate=1, requests=3, bootstrap=2, tools=1, our=2, refactored=1, out=7, across=2, uniform=1, flexibility=2, feature=6, boiler=1, writing=16, get=8, place=4, copy=9, 
+
+libraries=1, event=1, regular=1, restart=1, multitude=2, cutting=1, 
+
+(these=1, first=8, own=3, tight=1, perfecting=1, 
+
+http’s=1, should=8, only=2, unintentional=1, create=1, justice=1, from=13, mechanisms=1, like=10, caters=1, branches=2, reusable=2, ending=1, iterating=1, files=2, mud=3, here=1, purpose=1, line=6, balls=2, 
+
+this=4, scale=1, recovery=1, ‘lines=2, error=4, platform=1, network=1, can=15, servers=1, operations=4, i’ve=1, iteration=1, said=1, cost=1, much?=1, will=9, implementation=1, fault=1, instead=1, command=2, expensive=1, variable=2}
