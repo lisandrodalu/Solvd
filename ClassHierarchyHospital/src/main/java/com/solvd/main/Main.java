@@ -16,7 +16,7 @@ public class Main {
         PrivateRoom privateRoom = new PrivateRoom(600,2);
         Doctor doctor1 = null;
         try {
-            doctor1 = new Doctor("Martin White","2321",42,"Surgery",121,4600);
+            doctor1 = new Doctor("Martin White","2321",42,Specialties.SURGERY.toString(),121,4600);
         } catch (InvalidAgeException e) {
             LOGGER.info(e.getMessage());
         }
@@ -51,6 +51,8 @@ public class Main {
         }
 
         hospital.ambulanceTrip(new Paramedic(),new AmbulanceDriver());
+        System.out.println(Specialties.values().toString());
+
 
     }
 }
