@@ -1,6 +1,7 @@
 package com.solvd.model;
 
 import com.solvd.exceptions.InvalidAgeException;
+import com.solvd.interfaces.IWork;
 
 import java.util.Objects;
 
@@ -37,6 +38,9 @@ public class Doctor extends Employee {
         this.medicalID = medicalID;
     }
 
+    public void work(IWork work){
+        work.work();
+    }
     @Override
     public String toString() {
         return "com.solvd.model.Doctor " +

@@ -56,7 +56,7 @@ public class Main {
         hospital.ambulanceTrip(new Paramedic(),new AmbulanceDriver());
 
         //Functional Interfaces
-        Function<Integer,Integer> adder = (value) -> value + 3;
+        doctor1.work(()-> System.out.println("Doctor Working"));
 
 
 
