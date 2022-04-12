@@ -32,14 +32,6 @@ public class PatientsDataBase {
         patients.add(p);
     }
     public Patient searchPatient(Patient patient){
-        boolean exist = false;
-        Patient actual = null;
-        Iterator<Patient> it = this.patients.iterator();
-        while(it.hasNext() && !exist){
-             actual = it.next();
-            if(actual.getId() == patient.id)
-                exist = true;
-        }
-        return actual;
+        return this.patients.stream().filter(patient1 -> patient1.getId()== patient.id).findFirst().orElse(null);
     }
 }

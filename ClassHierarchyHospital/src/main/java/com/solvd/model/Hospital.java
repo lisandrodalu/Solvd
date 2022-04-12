@@ -6,6 +6,7 @@ import com.solvd.exceptions.NonExistantRoomException;
 import com.solvd.exceptions.OccupiedAmbulanceException;
 
 import java.util.ArrayList;
+import java.util.stream.Collectors;
 
 public class Hospital {
     private String name;
@@ -83,22 +84,25 @@ public class Hospital {
     }
 
     public Room searchRoom(int number){
-        Room room = null;
-        for (int i=0;i<rooms.size();i++){
-            if(rooms.get(i).getRoomNumber()==number)
-                room = rooms.get(i);
-        }
-        return room;
+        return rooms.stream().filter(room -> room.getRoomNumber()==number).findFirst().orElse(null);
+    }
 
-    }
     public Doctor searchDoctor(int number){
-        Doctor doctor = null;
-        for (int i=0;i<doctors.size();i++){
-            if(doctors.get(i).getMedicalID()==number)
-                doctor = doctors.get(i);
-        }
-        return doctor;
+        return  doctors.stream().filter(doctor -> doctor.getMedicalID()==number).findFirst().orElse(null);
     }
+
+    public ArrayList<Room> getRooms() {
+        return rooms;
+    }
+
+    public ArrayList<Doctor> getDoctors() {
+        return doctors;
+    }
+
+    public PatientsDataBase getPatientsDataBase() {
+        return patientsDataBase;
+    }
+
     @Override
     public String toString() {
         return "Hospital{" +

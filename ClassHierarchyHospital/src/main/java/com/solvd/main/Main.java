@@ -1,10 +1,13 @@
 package com.solvd.main;
 
+import com.solvd.enums.Medicine;
 import com.solvd.enums.Specialties;
 import com.solvd.exceptions.*;
 import com.solvd.model.*;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
+
+import java.util.function.Function;
 
 public class Main {
     private final static Logger LOGGER = LogManager.getLogger(Main.class);
@@ -31,7 +34,7 @@ public class Main {
            LOGGER.info(e.getMessage());
         }
 
-        //Methods
+        //Methods with exceptions
         try {
             hospital.enterHospital(patient);
         } catch (FullRoomException e) {
@@ -51,8 +54,13 @@ public class Main {
         }
 
         hospital.ambulanceTrip(new Paramedic(),new AmbulanceDriver());
-        System.out.println(Specialties.values().toString());
+
+        //Functional Interfaces
+        Function<Integer,Integer> adder = (value) -> value + 3;
+
+
 
 
     }
+
 }
