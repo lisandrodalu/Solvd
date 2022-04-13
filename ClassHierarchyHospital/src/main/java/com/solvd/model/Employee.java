@@ -1,6 +1,7 @@
 package com.solvd.model;
 
 import com.solvd.exceptions.InvalidAgeException;
+import com.solvd.interfaces.IWork;
 
 public class Employee extends Person{
     protected long salary;
@@ -21,4 +22,7 @@ public class Employee extends Person{
         this.salary = salary;
     }
 
+    public void work(IWork work){
+        work.work();
+    }
 }

@@ -53,10 +53,14 @@ public class Main {
             LOGGER.info(e.getMessage());
         }
 
-        hospital.ambulanceTrip(new Paramedic(),new AmbulanceDriver());
+        Paramedic paramedic = new Paramedic();
+        AmbulanceDriver driver = new AmbulanceDriver();
+        hospital.ambulanceTrip(paramedic,driver);
 
         //Functional Interfaces
         doctor1.work(()-> System.out.println("Doctor Working"));
+        paramedic.work(()-> System.out.println("Paramedic Working"));
+        driver.work(()-> System.out.println("Ambulance Driver Working"));
 
 
 

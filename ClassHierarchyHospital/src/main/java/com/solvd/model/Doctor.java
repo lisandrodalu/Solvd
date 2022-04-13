@@ -38,9 +38,7 @@ public class Doctor extends Employee {
         this.medicalID = medicalID;
     }
 
-    public void work(IWork work){
-        work.work();
-    }
+
     @Override
     public String toString() {
         return "com.solvd.model.Doctor " +
